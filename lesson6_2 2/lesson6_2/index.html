@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="todo">
+        <input type="text" id="input" placeholder="To Do...">
+        <button id="create_button">Create Todo</button>
+    </div>
+
+    <div id="todo_list">
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal_box">
+            <h2>Вы действительно хотите удалить?</h2>
+            <p class="title">Удалив вы больше не сможете вернуть</p>
+            <span id="exit" class="close">&times;</span>
+            <button id="yes" class="btn-yes">Удалить</button>
+            <button id="cansel" class="btn-cansel">Отмена</button>
+        </div>
+    </div>
+
+    <div id="edit__Modal" class="modal">
+        <div class="modal_box">
+            <h2>Edit Text?</h2>
+            <input type="text" id="edit_inp" class="text_">
+            <span id="exit2" class="close">&times;</span>
+            <button id="ha" class="btn-yes">Да</button>
+            <button id="che" class="btn-cansel">Отмена</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>

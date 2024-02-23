@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: silver;
+    padding: 20px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    margin: 0 auto;
+}
+
+input {
+    border: 2px solid teal;
+    font-size: 20px;
+    height: 40px;
+    width: 500px;
+    padding-left: 5px;
+}
+
+#create_button {
+    width: 240px;
+    height: 40px;
+    border: 2px solid teal;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+
+#todo_list {
+    margin: 0 auto;
+    width: 700px;
+
+}
+.modal {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity.6s, visibility.6s;
+}
+
+
+.modal_box {
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    transform: scale(0);
+    transition: transform .8s;
+    border-radius: 4px;
+}
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+.modal.open .modal_box {
+    transform: scale(1);
+}
+
+.block_text {
+    width: 100%;
+    border: 2px solid teal;
+    padding: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3 {
+    font-size: 30px;
+}
+.div_button {
+    display: flex;
+    width: 320px;
+    height: 100%;
+    justify-content: space-between;
+}
+.delete_button {
+    width: 150px;
+    height: 40px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.edit_button {
+    width: 150px;
+    height: 40px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle {
+    text-decoration: line-through;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-yes{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.btn-cansel{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.text_{
+    width: 350px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
